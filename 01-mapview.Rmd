@@ -39,7 +39,11 @@ wells_trav_irr <- wells %>%
          use_clean == "irrigation")
 ```
 
-This is the bit to map the wells. 
+# The actual mapping
+
+- The values of `coord_dd_long` and `coord_dd_lat` are the names of the longitude and latitude fields in the data.
+- The `init=epsg` part sets the map projection. It should be used as below.
+
 
 ```{r}
 coordinates(wells_trav_irr) <- ~ coord_dd_long + coord_dd_lat
