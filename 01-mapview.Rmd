@@ -16,19 +16,6 @@ library(tidyverse)
 library(sp)
 ```
 
-Breweries is a dataset baked into mapview for testing.
-
-```{r}
-mapview(breweries)
-```
-
-Just looking at the data for breweries.
-
-```{r}
-brew <- as.data.frame(breweries)
-brew
-```
-
 ## Using mapview to show some wells
 
 Importing wells
@@ -37,7 +24,7 @@ Importing wells
 wells <- read_rds("data-raw/wells_03.rds")
 ```
 
-Looking at the use_clean column.
+Looking at the use_clean column just to inspect them.
 
 ```{r}
 wells %>% 
